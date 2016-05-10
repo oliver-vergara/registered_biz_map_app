@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Certificate No.</th>
+  </tr>
+  <% @businesses.each do |business| %>
+    <tr>
+      <td><%= business['ownership_name'] %></td>
+      <td><%= business['full_business_address'] %></td>
+      <td><%= business['certificate_number'] %></td>
+    </tr>
+  <% end %>
+</table>
